@@ -1,5 +1,7 @@
 // Genericos
 // Genericos son una forma de crear funciones, clases o interfaces que pueden trabajar con diferentes tipos de datos
+// Puede recibir cualquier tipo de variable
+// Indica que es un valor generico, puedo recibir cualquier tipo de variable
 function identity(arg) {
     return arg;
 }
@@ -21,5 +23,5 @@ var Caja = /** @class */ (function () {
     };
     return Caja;
 }());
-var cajaDeStringd = new Caja("Hola mundo");
+var cajaDeStringd = new Caja("muchas ganas de aprender y superarse");
 console.log("contenido de la caja: ", cajaDeStringd.obtenerContenido());
