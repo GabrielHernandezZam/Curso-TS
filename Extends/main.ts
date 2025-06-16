@@ -5,12 +5,13 @@ console.log(nom.length);
 //Extender la funcionalidad de los metoods
 //Esta nos puede dar mas informacion
 // Para que proposiposito se esta haciendo
-function obtenerLongitud <T extends {length: number}>(obj:T): number{
-    let longitud:number = obj.length;
-    let tipo:string = typeof obj;
-    console.log(`Longitud ${longitud} y tipo ${tipo}`)
-    return obj.length
+function obtenerLongitud<T extends { length: number }>(obj: T): number {
+  let longitud: number = obj.length;
+  let tipo: string = typeof obj;
+  console.log(`Longitud ${longitud} y tipo ${tipo}`);
+  return obj.length;
 }
 
-console.log(obtenerLongitud("Hola"))
+console.log(obtenerLongitud("Hola"));
+console.log("Holamundo");
 //Los metodos extendidos dependen de una propiedad por defecto de tus valores
