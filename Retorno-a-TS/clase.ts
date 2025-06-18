@@ -54,6 +54,7 @@ class RiegoPerfilTransaccional {
     this.Riesgo = Riesgo;
   }
   calcularPefil(): string {
+    
     return `Este es tu perfil para la persona con ${this.IDCotizacion}, con numero de cliente ${this.Cliente} y con Orden ${this.IDOrden}`;
   }
 }
